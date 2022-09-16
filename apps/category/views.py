@@ -26,14 +26,14 @@ class CategoryView(View):
         else:
             categories = list(Category.objects.values())
             if len(categories) > 0:
-                data = {'message': "Success", 'categorias': categories}
+                data = {'message': "Success", 'categories': categories}
             else:
                 data = {'message': "Category no found ..."}
             return JsonResponse(data)
 
     def post(self, request):
         jd = json.loads(request.body)
-        Category.objects.create(name_category=jd['name_category'], type_category=jd['tipo_categoria'])
+        Category.objects.create(name_category=jd['name_category'], type_category=jd['type_category'])
         data = {'message': "Success"}
         return JsonResponse(data)
 
