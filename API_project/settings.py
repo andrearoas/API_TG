@@ -31,10 +31,10 @@ DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = [
     '*',
-    'http://apitg-production.up.railway.app/',
-    'https://apitg-production.up.railway.app/',
-    'apitg-production.up.railway.app/',
-    'apitg-production.up.railway.app',
+    'http://apitghuerta.up.railway.app/',
+    'https://apitghuerta.up.railway.app/',
+    'apitghuerta.up.railway.app/',
+    'apitghuerta.up.railway.app',
 ]
 
 # Application definition
@@ -137,8 +137,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
-    'http://apitg-production.up.railway.app',
-    'https://apitg-production.up.railway.app',
+    'http://apitghuerta.up.railway.app',
+    'https://apitghuerta.up.railway.app',
 ]
 
 SESSION_COOKIE_SECURE = True
