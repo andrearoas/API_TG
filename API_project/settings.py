@@ -21,9 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-phjv)fwj)&20t-3e(r2qepnj_(ay%!$q18bqn)x-9b$)uzd6&*'
+# SECRET_KEY = 'poeriqmcnrtort-phjv)fwj)&20t-3e(r2qepnj_(ay%!$q18bqn)x-9b$)uzd6&*'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-phjv)fwj)&20t-3e(r2qepnj_(ay%!$q18bqn)x-9b$)uzd6&*')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'poeriqmcnrtort-phjv)fwj)&20t-3e(r2qepnj_(ay%!$q18bqn)x-9b$)uzd6&*')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -140,3 +140,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://apitg-production.up.railway.app',
     'https://apitg-production.up.railway.app',
 ]
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
